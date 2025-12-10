@@ -1,0 +1,6 @@
+flask==2.3.3
+python-dotenv==1.0.0
+numpy==1.26.0
+langchain-core==0.1.17
+langchain-google-genai==0.1.0
+langgraph==0.0.20
