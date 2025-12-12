@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgriMitra"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".AgriMam"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".SpeechToTextPage"
+            android:exported="false" />
+        <activity
+            android:name=".FertiCheckResult"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateBarcodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FertiCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecommendationPage"
+            android:exported="false" />
+        <activity
+            android:name=".PestDiseaseResult"
+            android:exported="false" />
+        <activity
+            android:name=".YieldPrediction"
+            android:exported="false" />
+        <activity
+            android:name=".PestDetection"
+            android:exported="false" />
+        <activity
+            android:name=".SatelliteAnalysis"
+            android:exported="false" />
+        <activity
+            android:name=".CropDisease"
+            android:exported="false" />
+        <activity
+            android:name=".IrrigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".YieldPredictionResult"
+            android:exported="false" />
+        <activity
+            android:name=".CropDiseaseResult"
+            android:exported="false" />
+        <activity
+            android:name=".CropRecommendation"
+            android:exported="false" />
+        <activity
+            android:name=".CropRecommendationResultPage"
+            android:exported="false" />
+        <activity
+            android:name=".PestMapPage"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBot"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Schemes"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityChat"
+            android:exported="false" />
+        <activity
+            android:name=".CommunityMenu"
+            android:exported="false" />
+        <activity
+            android:name=".SimulatorResultPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SimulatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmBookPage"
+            android:exported="false" />
+        <activity
+            android:name=".PediaDetailPage"
+            android:exported="false" />
+        <activity
+            android:name=".Pedia"
+            android:exported="false" />
+        <activity
+            android:name=".PestReportPage"
+            android:exported="false" />
+        <activity
+            android:name=".MachinePage"
+            android:exported="false" />
+        <activity
+            android:name=".NewsPage"
+            android:exported="false" />
+        <activity
+            android:name=".MarketPriceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainPage"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".LanguagePage2"
+            android:exported="false" />
+        <activity
+            android:name=".LanguagePage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCAY-K0DjFeFpOEACIcV2em4MyG2OJTIkY" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

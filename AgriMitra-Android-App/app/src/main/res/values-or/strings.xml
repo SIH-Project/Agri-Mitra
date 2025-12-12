@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+        <string name="title_croppage">ଫସଲ ପରିଚାଳନା</string>
+        <string name="yield_prediction_croppage">ଉତ୍ପାଦନ ପୂର୍ବାନୁମାନ</string>
+        <string name="helpers_croppage">ସହାୟକ</string>
+        <string name="satellite_analysis_croppage">ସାଟେଲାଇଟ୍\nବିଶ୍ଳେଷଣ</string>
+        <string name="crop_doctor_croppage">ଫସଲ ଡାକ୍ତର\n(ରୋଗ ପୂର୍ବାନୁମାନ)</string>
+        <string name="irrigation_plan_croppage">ସିଚାଇ ଯୋଜନା\n(ସାପ୍ତାହିକ)</string>
+        <string name="crop_recommendation_croppage">ଫସଲ\nସୁପାରିଶ</string>
+        <string name="fertilizer_pesticide_pedia_croppage">ଉର୍ବରକ ଏବଂ କୀଟନାଶକ ପୀଡ଼ିଆ</string>
+        <string name="simulation_game_croppage">ସିମୁଲେସନ୍\nଗେମ୍</string>
+        <string name="farm_book_croppage">ଫାର୍ମ ବୁକ୍</string>
+
+
+
+
+
+
+
+
+
+</resources>

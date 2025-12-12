@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".SatelliteAnalysis">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/card"
+            android:elevation="2dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/leaf_svgrepo_com"
+                    android:id="@+id/leaf"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    />
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/leaf"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Crop Dashboard"
+                    android:textColor="#38893C"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/alertIcon"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"/>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Longitude" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Longitude"
+            android:id="@+id/et1"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000"
+            android:layout_below="@+id/t3"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="#888888" />
+
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et1"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Latitude" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter Latitude"
+            android:id="@+id/et2"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000"
+            android:layout_below="@+id/t4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="#888888" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/cv1"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/et2"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#98ff98">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:id="@+id/submit_text"
+
+                    android:paddingHorizontal="24dp"
+
+                    android:paddingVertical="12dp"
+                    android:text="Submit"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cv1"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:id="@+id/or"
+            />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/cv2"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/or"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#98ff98">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:id="@+id/current_text"
+
+                    android:paddingHorizontal="24dp"
+
+                    android:paddingVertical="12dp"
+                    android:text="Current Location"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/cv2"
+            android:id="@+id/rl2"
+            >
+
+            <ProgressBar
+                android:id="@+id/loadingProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:indeterminateTint="#98FF98"/>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl1"
+
+            android:layout_below="@+id/cv2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textSize="30dp"
+                android:id="@+id/text2"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginLeft="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/text2"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/yield_percentage"
+                app:cardElevation="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#f8f8f8"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Farming Statistics"
+                        android:textColor="#525154"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="50dp"
+
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Coverage Area: 2500 ha\n\nData Quality: cloud_masked\n\nNDVI Mean: 0.3376318325\n\nNDVI Std: 0.16214700\n\nRegion: Tamil Nadu\n\nGrowth Stage: Stage 1(seeding)\n\nManagement: Ensure adequate soil moisture,monitor for pest"
+                        android:textColor="#525154"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/info_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/info_text"
+
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+
+
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="pH value: 6.2(Acidic)\nElectricity Conductivity:\n0.2dS/m(non-Saline)\nNitrogen(N): 320kg/ha\nPhosphorus(P): 83 Kg/ha\nPotassium(K):112 Kh/ha "
+                        android:textColor="#525154"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="NDVI"
+                android:layout_below="@id/yield_percentage"
+                android:layout_marginTop="20dp"
+
+                android:textSize="30dp"
+                android:id="@+id/text3"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+
+                android:text="More Green = Dense, healthy, actively photosynthesizing crops (more chlorophyll)."
+                android:layout_below="@id/text3"
+                android:layout_marginTop="0dp"
+
+                android:textSize="20dp"
+                android:id="@+id/mt_1"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginLeft="20dp"/>
+
+
+
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mt_1"
+                android:src="@drawable/ndv1"
+                android:layout_marginTop="10dp"
+                android:id="@+id/image1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NDRE"
+                android:layout_below="@id/image1"
+                android:layout_marginTop="10dp"
+
+                android:textSize="30dp"
+                android:id="@+id/text4"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+
+                android:text="More Green = More Nitrogen Rich Soil."
+                android:layout_below="@id/text4"
+                android:layout_marginTop="0dp"
+
+                android:textSize="20dp"
+                android:id="@+id/mt_2"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mt_2"
+                android:src="@drawable/ndre1"
+                android:layout_marginTop="10dp"
+                android:id="@+id/image2"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nutrients Map"
+                android:layout_below="@id/image2"
+                android:layout_marginTop="10dp"
+
+                android:textSize="30dp"
+                android:id="@+id/text5"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginLeft="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+
+                android:text="More Red = More nutrients deficient area."
+                android:layout_below="@id/text5"
+                android:layout_marginTop="0dp"
+
+                android:textSize="20dp"
+                android:id="@+id/mt_3"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mt_3"
+                android:src="@drawable/growth1"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/image3"/>
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

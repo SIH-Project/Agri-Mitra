@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PestPage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/cv1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pest"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/c1"
+            android:layout_marginRight="15dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/cv1"
+
+            android:layout_height="200dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Image at the top -->
+                <ImageView
+                    android:id="@+id/card_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pest" />
+
+                <!-- Text below the image -->
+                <TextView
+                    android:id="@+id/card_text1"
+                    android:layout_width="368dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_image1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="left"
+                    android:text="Pest Detection"
+                    android:textColor="#38893C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/c2"
+            android:layout_marginRight="15dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/c1"
+
+            android:layout_height="200dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Image at the top -->
+                <ImageView
+                    android:id="@+id/card_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/report" />
+
+                <!-- Text below the image -->
+                <TextView
+                    android:id="@+id/card_text2"
+                    android:layout_width="368dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_image2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="left"
+                    android:text="Pest Report"
+                    android:textColor="#38893C"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/c3"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="40dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/c2"
+
+            android:layout_height="200dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Image at the top -->
+                <ImageView
+                    android:id="@+id/card_image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/india" />
+
+                <!-- Text below the image -->
+                <TextView
+                    android:id="@+id/card_text3"
+                    android:layout_width="368dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_image3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="left"
+                    android:text="Pest Map"
+                    android:textColor="#38893C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</ScrollView>

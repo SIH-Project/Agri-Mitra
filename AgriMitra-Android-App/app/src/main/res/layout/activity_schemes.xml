@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F5F5F5"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Schemes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cardElevation="0dp"
+                android:id="@+id/cv1"
+                android:layout_marginTop="0dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Schemes &amp; Subsidies"
+                        android:layout_centerInParent="true"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins_bold"/>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        <!-- 🔹 CARD 1: PM-KISAN -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_pm_kisan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+
+                    android:id="@+id/a1"
+
+
+                    android:text="Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/b1"
+
+                    android:text="₹6,000/year direct income support to farmers in 3 equal installments."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c1"
+
+                    android:layout_marginTop="8dp"
+                    android:text="Eligibility: Small &amp; marginal land-owning farmers."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_pm_kisan"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:id="@+id/d1"
+
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 CARD 2: PM-KUSUM -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_pm_kusum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/a2"
+                    android:text="PM-KUSUM (Solar Pump Subsidy)"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b2"
+
+                    android:layout_marginTop="8dp"
+                    android:text="Subsidy for solar irrigation pumps &amp; feeder solarisation."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/c2"
+
+                    android:text="Eligibility: Farmers with irrigation pumps."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_pm_kusum"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:id="@+id/d2"
+
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 Repeat similar for other schemes -->
+        <!-- 3. FPO Scheme -->
+        <!-- 4. Agri Infra Fund -->
+        <!-- 5. Soil Health Card -->
+        <!-- 6. PKVY -->
+        <!-- 7. Interest Subvention -->
+        <!-- 8. Digital Agriculture Mission -->
+        <!-- 9. Beekeeping (NBHM) -->
+        <!-- 10. Price Support Scheme (MIS-PSS) -->
+
+        <!-- 🔹 CARD 3: Farmer Producer Organisations (FPO) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_fpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/a3"
+
+                    android:text="Farmer Producer Organisations (FPO)"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/b3"
+
+                    android:text="Helps farmers group together for better bargaining power, credit &amp; marketing."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/c3"
+
+                    android:text="Eligibility: Groups of local farmers forming FPOs."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_fpo"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:id="@+id/d3"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 CARD 4: Agriculture Infrastructure Fund -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_aif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a4"
+
+                    android:layout_marginTop="12dp"
+                    android:text="Agriculture Infrastructure Fund (AIF)"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/b4"
+
+                    android:text="Loans at subsidised rates for warehouses, cold storage &amp; processing units."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c4"
+
+                    android:layout_marginTop="8dp"
+                    android:text="Eligibility: Farmers, FPOs, agri-entrepreneurs."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_aif"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:id="@+id/d4"
+
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 CARD 5: Soil Health Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_soil_health"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a5"
+                    android:layout_marginTop="12dp"
+                    android:text="Soil Health Card Scheme"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b5"
+
+                    android:layout_marginTop="8dp"
+                    android:text="Free soil testing &amp; fertilizer recommendations for cost reduction &amp; yield."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c5"
+
+                    android:layout_marginTop="8dp"
+                    android:text="Eligibility: All farmers via local agriculture offices."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_soil_health"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+
+
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/d5"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 CARD 6: PKVY -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_pkvy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/a6"
+                    android:text="Paramparagat Krishi Vikas Yojana (PKVY)"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/b6"
+                    android:text="Supports organic farming clusters with subsidy, certification &amp; marketing."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c6"
+                    android:layout_marginTop="8dp"
+                    android:text="Eligibility: Groups of 20-50 farmers willing for organic farming."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_pkvy"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:id="@+id/d6"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- 🔹 CARD 7: Modified Interest Subvention Scheme (MISS) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_miss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/a7"
+                    android:text="Modified Interest Subvention Scheme (MISS)"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b7"
+                    android:layout_marginTop="8dp"
+                    android:text="Subsidised crop loans with extra discount for prompt repayment."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/c7"
+                    android:text="Eligibility: Farmers taking crop loans via Kisan Credit Card."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_miss"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/d7"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 CARD 8: Digital Agriculture Mission -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_digital_agriculture"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Digital Agriculture Mission"
+                    android:id="@+id/a8"
+
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/b8"
+
+                    android:text="Uses GIS, remote sensing &amp; data tools to boost farming efficiency."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/c8"
+
+                    android:text="Eligibility: All farmers can benefit through access to digital tools."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_digital_agriculture"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:id="@+id/d8"
+
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 CARD 9: National Beekeeping & Honey Mission (NBHM) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_nbhm"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/a9"
+
+                    android:layout_marginTop="12dp"
+                    android:text="National Beekeeping and Honey Mission (NBHM)"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/b9"
+
+
+                    android:text="Supports scientific beekeeping, honey quality testing &amp; market linkages."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/c9"
+
+                    android:text="Eligibility: Beekeepers, small farmers, societies."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_nbhm"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:id="@+id/d9"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 🔹 CARD 10: Market Intervention Scheme / Price Support Scheme (MIS-PSS) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_mis_pss"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/s10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/a10"
+                    android:text="Market Intervention Scheme (MIS) / Price Support Scheme (PSS)"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/b10"
+
+
+                    android:text="Government procures crops when prices fall, ensuring farmer income."
+                    android:textSize="15sp"
+                    android:textColor="#444" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/c10"
+
+                    android:text="Eligibility: Farmers of specified crops during surplus/price crash."
+                    android:textSize="14sp"
+                    android:textColor="#666" />
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/btn_apply_mis_pss"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+                            android:id="@+id/d10"
+
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Apply"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

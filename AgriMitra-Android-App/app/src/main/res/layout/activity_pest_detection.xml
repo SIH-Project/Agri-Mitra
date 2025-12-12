@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PestDetection">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop Selection"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_bold"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Crop Label -->
+    <TextView
+        android:id="@+id/tvSelectCrop"
+        android:layout_below="@id/cvHeader"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="Select Image"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img1"
+        android:layout_below="@id/tvSelectCrop"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#f5f5f5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img2"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Crop Spinner -->
+
+
+    <!-- Choose Image Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnChooseImage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#98ff98">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="12dp"
+                android:text="Choose Image"
+                android:textColor="#2f7f33"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnSubmitImage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnChooseImage"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#98ff98">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="12dp"
+                android:text="Submit Image"
+                android:textColor="#2f7f33"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ImageView to display selected image -->
+    <ImageView
+        android:id="@+id/imageSelectedCrop"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/btnSubmitImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:contentDescription="Selected Crop Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"/>
+
+
+
+</RelativeLayout>

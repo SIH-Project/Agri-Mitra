@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F5F5F5"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pedia">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardElevation="0dp"
+
+            android:id="@+id/cv1"
+            android:layout_marginTop="0dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fertilizers &amp; Pesticides"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Natural Fertilizers"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="20dp"
+        android:id="@+id/t1"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/t1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/c1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/ic1"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/compost"
+                android:id="@+id/img1"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Compost"
+                android:textSize="25dp"
+                android:id="@+id/it1"
+                android:layout_toRightOf="@id/ic1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/it2"
+                android:text="Decomposed organic matter from plant residues, kitchen scraps, and animal waste."
+                android:layout_below="@+id/it1"
+                android:fontFamily="@font/poppins"
+                android:layout_toRightOf="@+id/ic1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-8dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/c1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+
+        android:id="@+id/c2"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/ic2"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/manure"
+                        android:id="@+id/img2"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animal Manure"
+                android:textSize="25dp"
+                android:id="@+id/it3"
+                android:layout_toRightOf="@id/ic2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/it4"
+                android:text="Waste from animals like cows, goats, poultry, and horses."
+                android:layout_below="@+id/it3"
+                android:fontFamily="@font/poppins"
+                android:layout_toRightOf="@+id/ic2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-8dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/c2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+
+        android:id="@+id/c3"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/ic3"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/gm"
+                        android:id="@+id/img3"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Manure"
+                android:textSize="25dp"
+                android:id="@+id/it5"
+                android:layout_toRightOf="@id/ic3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/it6"
+                android:text="Growing specific crops (legumes or cowpea) and plowing them back into the soil."
+                android:layout_below="@+id/it5"
+                android:fontFamily="@font/poppins"
+                android:layout_toRightOf="@+id/ic3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-8dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Natural Pesticides"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="20dp"
+        android:layout_below="@+id/c3"
+        android:id="@+id/t2"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/t2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/c4"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/ic4"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/no"
+                        android:id="@+id/img4"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neem Oil"
+                android:textSize="25dp"
+                android:id="@+id/it7"
+                android:layout_toRightOf="@id/ic4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/it8"
+                android:text="A broad spectrum pesticide derived from neem tree seeds that disrupts insect growth and feeding."
+                android:layout_below="@+id/it7"
+                android:fontFamily="@font/poppins"
+                android:layout_toRightOf="@+id/ic4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-8dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/c4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+
+        android:id="@+id/c5"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/ic5"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/pyth"
+                        android:id="@+id/img5"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pyrethrin"
+                android:textSize="25dp"
+                android:id="@+id/it9"
+                android:layout_toRightOf="@id/ic5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/it10"
+                android:text="A fast acting insecticide derived from chrysanthemum flowers."
+                android:layout_below="@+id/it9"
+                android:fontFamily="@font/poppins"
+                android:layout_toRightOf="@+id/ic5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-8dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/c5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+
+        android:id="@+id/c6"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/ic6"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dis"
+                        android:id="@+id/img6"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diatomaceous"
+                android:textSize="25dp"
+                android:id="@+id/it11"
+                android:layout_toRightOf="@id/ic6"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/it12"
+                android:text="A mechanical insect killer made from fossilized algae that dehydrates pests."
+                android:layout_below="@+id/it11"
+                android:fontFamily="@font/poppins"
+                android:layout_toRightOf="@+id/ic6"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-8dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artificial Fertilizers"
+                    android:layout_below="@+id/c6"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20dp" />
+
+                <!-- Urea -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c7"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/t3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/ic7"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/urea" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/it13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Urea"
+                            android:textSize="25dp"
+                            android:layout_toRightOf="@id/ic7"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <TextView
+                            android:id="@+id/it14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="High nitrogen fertilizer used for boosting leafy crop growth."
+                            android:layout_below="@id/it13"
+                            android:layout_toRightOf="@id/ic7"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- DAP -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c8"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/c7"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/ic8"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/dap"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/it15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAP"
+                            android:textSize="20dp"
+                            android:layout_toRightOf="@id/ic8"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <TextView
+                            android:id="@+id/it16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Popular phosphate fertilizer providing both nitrogen and phosphorus."
+                            android:layout_below="@id/it15"
+                            android:layout_toRightOf="@id/ic8"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- MOP -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c9"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/c8"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/ic9"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/mop"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/it17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MOP"
+                            android:textSize="22dp"
+                            android:layout_toRightOf="@id/ic9"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <TextView
+                            android:id="@+id/it18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Potassium chloride fertilizer that enhances drought resistance and yield."
+                            android:layout_below="@id/it17"
+                            android:layout_toRightOf="@id/ic9"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- ARTIFICIAL PESTICIDES -->
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artificial Pesticides"
+                    android:layout_below="@+id/c9"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20dp" />
+
+                <!-- Carbaryl -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c10"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/t4"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/ic10"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/carb"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/it19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Carbaryl"
+                            android:textSize="22dp"
+                            android:layout_toRightOf="@id/ic10"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <TextView
+                            android:id="@+id/it20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Broad-spectrum insecticide effective against many chewing and sucking pests."
+                            android:layout_below="@id/it19"
+                            android:layout_toRightOf="@id/ic10"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Chlorpyrifos -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c11"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/c10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/ic11"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/chlor"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/it21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chlorpyrifos"
+                            android:textSize="22dp"
+                            android:layout_toRightOf="@id/ic11"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <TextView
+                            android:id="@+id/it22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Organophosphate pesticide commonly used for soil and foliage pests."
+                            android:layout_below="@id/it21"
+                            android:layout_toRightOf="@id/ic11"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Glyphosate -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c12"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/c11"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/ic12"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                    android:src="@drawable/gly"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/it23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Glyphosate"
+                            android:textSize="22dp"
+                            android:layout_toRightOf="@id/ic12"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_semibold"/>
+
+                        <TextView
+                            android:id="@+id/it24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Widely used herbicide for controlling weeds in crop fields."
+                            android:layout_below="@id/it23"
+                            android:layout_toRightOf="@id/ic12"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

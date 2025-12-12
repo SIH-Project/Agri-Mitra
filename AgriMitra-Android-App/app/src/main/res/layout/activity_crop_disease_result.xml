@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CropDiseaseResult">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Disease Image -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/cv1"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rice"
+                    android:id="@+id/imgDisease"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Disease Name -->
+        <TextView
+            android:id="@+id/tDiseaseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Late Blight (आलू का झुलसा रोग)"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+
+        <ImageButton
+            android:id="@+id/explain"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/tDiseaseName"
+
+            android:background="@android:color/transparent"
+            android:src="@drawable/volumeicon"/>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/lblDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/explain"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Description"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblDescription"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Late blight is a fungal disease that causes dark spots on leaves and rots tubers."
+            android:textSize="18sp"/>
+
+        <!-- Causes -->
+        <TextView
+            android:id="@+id/lblCauses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tDescription"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Causes"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tCauses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCauses"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Caused by Phytophthora infestans. Spreads in humid and cool weather."
+            android:textSize="18sp"/>
+
+        <!-- Symptoms -->
+        <TextView
+            android:id="@+id/lblSymptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tCauses"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Symptoms (Identification)"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tSymptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblSymptoms"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Irregular brown spots, white mold on leaves, tubers turn black."
+            android:textSize="18sp"/>
+
+        <!-- Precautions -->
+        <TextView
+            android:id="@+id/lblPrecautions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tSymptoms"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Precautions"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tPrecautions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblPrecautions"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Avoid waterlogging, use resistant varieties, crop rotation."
+            android:textSize="18sp"/>
+
+        <!-- Pesticides -->
+        <TextView
+            android:id="@+id/lblPesticides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tPrecautions"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Recommended Pesticides / Fungicides"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tPesticides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblPesticides"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Spray Mancozeb or Metalaxyl. ⚠️ Use as per agri officer’s advice."
+            android:textSize="18sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_below="@id/tPesticides"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/l1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/c2"
+                android:background="#FFFFFF"
+                android:layout_height="350dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Image at the top -->
+                    <ImageView
+                        android:id="@+id/card_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tagmycin" />
+
+                    <!-- Text below the image -->
+                    <TextView
+                        android:id="@+id/card_text2"
+                        android:layout_width="368dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_image2"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="left"
+                        android:text="Tagmycin 6gm"
+                        android:textColor="#38893C"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/button1"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#98ff98">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="center"
+                                android:id="@+id/b1"
+
+
+                                android:paddingHorizontal="24dp"
+
+                                android:paddingVertical="12dp"
+                                android:text="Buy"
+                                android:textColor="#2f7f33"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1"
+                android:id="@+id/c3"
+                android:background="#FFFFFF"
+
+                android:layout_height="350dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Image at the top -->
+                    <ImageView
+                        android:id="@+id/card_image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/syng" />
+
+                    <!-- Text below the image -->
+                    <TextView
+                        android:id="@+id/card_text3"
+                        android:layout_width="368dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_image3"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="left"
+                        android:text="Syngenta Amistar Top Fungicide (100 ml)"
+                        android:textColor="#38893C"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/button2"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#98ff98">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="center"
+                                android:id="@+id/b2"
+
+
+                                android:paddingHorizontal="24dp"
+
+                                android:paddingVertical="12dp"
+                                android:text="Buy"
+                                android:textColor="#2f7f33"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_below="@id/l1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/l2">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+
+                app:cardCornerRadius="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/c4"
+                android:background="#FFFFFF"
+                android:layout_height="350dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Image at the top -->
+                    <ImageView
+                        android:id="@+id/card_image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/anoka" />
+
+                    <!-- Text below the image -->
+                    <TextView
+                        android:id="@+id/card_text4"
+                        android:layout_width="368dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_image4"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="left"
+                        android:text="Anoka Trichoderma + Pseudomonas Bio-control"
+                        android:textColor="#38893C"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/button3"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#98ff98">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="center"
+                                android:id="@+id/b3"
+
+
+                                android:paddingHorizontal="24dp"
+
+                                android:paddingVertical="12dp"
+                                android:text="Buy"
+                                android:textColor="#2f7f33"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1"
+                android:id="@+id/c5"
+                android:background="#FFFFFF"
+
+                android:layout_height="350dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Image at the top -->
+                    <ImageView
+                        android:id="@+id/card_image5"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/contact_persticide" />
+
+                    <!-- Text below the image -->
+                    <TextView
+                        android:id="@+id/card_text5"
+                        android:layout_width="368dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_image5"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="left"
+                        android:text="Hexaconazole 4% Contact &amp; Systemic Fungicide"
+                        android:textColor="#38893C"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/button4"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="6dp"
+                        app:cardBackgroundColor="#98ff98">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="center"
+                                android:id="@+id/b4"
+
+
+                                android:paddingHorizontal="24dp"
+
+                                android:paddingVertical="12dp"
+                                android:text="Buy"
+                                android:textColor="#2f7f33"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- Cultural Practices -->
+        <TextView
+            android:id="@+id/lblCultural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l2"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Cultural Practices"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tCultural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCultural"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Remove infected leaves, ensure spacing for airflow."
+            android:textSize="18sp"/>
+
+        <!-- Cost & Expected Loss -->
+        <TextView
+            android:id="@+id/lblCostLoss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tCultural"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Cost &amp; Expected Loss"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tCostLoss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCostLoss"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Untreated can cause 70% yield loss. Control cost: ₹1500–2000 per acre."
+            android:textSize="18sp"/>
+
+        <!-- Helpline -->
+        <TextView
+            android:id="@+id/lblHelpline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tCostLoss"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Nearby Help / Helpline"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tHelpline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblHelpline"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Kisan Call Center: 1800-180-1551"
+            android:textSize="18sp"
+            android:layout_marginBottom="40dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/callButton"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tHelpline"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+
+
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#98ff98">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:id="@+id/call"
+
+                    android:gravity="center"
+
+                    android:paddingHorizontal="24dp"
+
+                    android:paddingVertical="12dp"
+                    android:text="Call Help"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

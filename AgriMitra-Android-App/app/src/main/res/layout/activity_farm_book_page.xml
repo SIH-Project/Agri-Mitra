@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F5F5F5"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FarmBookPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/cv1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Guide"
+                    android:id="@+id/hello"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Spinner
+            android:id="@+id/spinnerPestType"
+            android:layout_below="@+id/cv1"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#98ff98"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btnSubmit"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/spinnerPestType"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#98ff98">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/abc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:paddingHorizontal="24dp"
+                    android:paddingVertical="12dp"
+                    android:text="Submit"
+                    android:textColor="#2f7f33"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:id="@+id/i1"
+            app:cardElevation="30dp"
+            android:layout_below="@+id/btnSubmit"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rice"
+                    android:id="@+id/img1"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rice"
+            android:layout_below="@+id/i1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="30dp"
+            android:id="@+id/t1"/>
+
+        <ImageButton
+            android:id="@+id/explain"
+            android:layout_below="@+id/t1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/volumeicon"/>
+
+
+
+
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_below="@+id/explain"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rice is a staple food for over half the world’s population. Successful rice farming requires knowledge of land preparation, planting, water management, pest control, and harvesting techniques. This guide covers all stages to help farmers improve yield, quality, and sustainability."
+            android:layout_below="@+id/t2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t3"/>
+
+        <!-- Land Preparation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Land Preparation"
+            android:layout_below="@+id/t3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rice grows best in clayey loam soil that retains water well. Soil pH should be between 5.5 and 7.0."
+            android:layout_below="@+id/t4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t5"/>
+
+        <!-- Selecting Variety -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecting Variety"
+            android:layout_below="@+id/t5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Choose high-yield, disease-resistant, and locally adapted varieties.\n\n2. Consider growth duration (short, medium, or long-duration varieties) based on local climate and market demand"
+            android:layout_below="@+id/t6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t7"/>
+
+        <!-- Seed Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seed Selection"
+            android:layout_below="@+id/t7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Use certified seeds with high germination rates.\n\n2. Soak seeds in water for 24 hours, then incubate in a wet cloth for 24-48 hours until sprouting."
+            android:layout_below="@+id/t8"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t9"/>
+
+        <!-- Planting Methods -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planting Methods"
+            android:layout_below="@+id/t9"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Transplanting: Seedlings are uprooted from the nursery and transplanted into the main field.\n\n2. Direct Seeding: Seeds are sown directly into the field either dry or pre-germinated."
+            android:layout_below="@+id/t10"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t11"/>
+
+        <!-- Water Management -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Management"
+            android:layout_below="@+id/t11"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t12"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rice requires standing water for most of its growth. Maintain 5 cm water depth from transplanting until the grain filling stage."
+            android:layout_below="@+id/t12"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t13"/>
+
+        <!-- Fertilizer Application -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fertilizer Application"
+            android:layout_below="@+id/t13"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Essential nutrients: Nitrogen (N), Phosphorus (P), Potassium (K).\n\nBasal application: Apply phosphorus and potassium during land preparation."
+            android:layout_below="@+id/t14"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t15"/>
+
+        <!-- Pest and Disease Management -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pest and Disease Management"
+            android:layout_below="@+id/t15"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Common pests: Stem borers, leaf folders, planthoppers, armyworms.\n\nCommon diseases: Blast, bacterial leaf blight, sheath blight."
+            android:layout_below="@+id/t16"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t17"/>
+
+        <!-- Harvesting -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harvesting"
+            android:layout_below="@+id/t17"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harvest when grains are mature (about 20-25% moisture content in grains).\n\nUse sickles or mechanical harvesters."
+            android:layout_below="@+id/t18"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t19"/>
+
+        <!-- Post-Harvest Handling -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post-Harvest Handling"
+            android:layout_below="@+id/t19"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dry grains immediately after harvest to reduce moisture content to 12-14%.\n\nProper drying prevents fungal growth and preserves grain quality."
+            android:layout_below="@+id/t20"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t21"/>
+
+        <!-- Sustainable Practices -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sustainable Practices"
+            android:layout_below="@+id/t21"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t22"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practice crop rotation with legumes or other crops to improve soil health.\n\nUse organic fertilizers and bio-pesticides."
+            android:layout_below="@+id/t22"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t23"/>
+
+    </RelativeLayout>
+
+</ScrollView>

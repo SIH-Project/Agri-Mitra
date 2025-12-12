@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YieldPredictionResult">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/cv0">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yield Prediction"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        android:layout_below="@id/cv0"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/cv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Soil Details"
+
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20dp"
+                android:id="@+id/t1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soil Type"
+                android:layout_below="@+id/t1"
+                android:layout_marginRight="20dp"
+                android:textColor="#a1a5ae"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t2"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loamy"
+                android:layout_below="@+id/t2"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t3"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop Type"
+                android:layout_below="@+id/t1"
+                android:layout_marginRight="20dp"
+                android:textColor="#a1a5ae"
+                android:layout_toRightOf="@+id/t2"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wheat"
+                android:layout_toRightOf="@+id/t2"
+
+                android:layout_below="@+id/t2"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t5"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:layout_below="@+id/t5"
+                android:layout_marginRight="20dp"
+                android:textColor="#a1a5ae"
+                android:layout_toRightOf="@+id/t2"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t6"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25°C"
+                android:layout_toRightOf="@+id/t2"
+
+                android:layout_below="@+id/t6"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t7"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pH"
+                android:layout_below="@+id/t3"
+                android:layout_marginRight="20dp"
+                android:textColor="#a1a5ae"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.5"
+                android:layout_below="@+id/t8"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t9"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:layout_below="@+id/t9"
+                android:layout_marginRight="20dp"
+                android:textColor="#a1a5ae"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t10"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27%"
+                android:layout_below="@+id/t10"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t11"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avg. Rainfall"
+                android:layout_below="@+id/t11"
+                android:layout_marginRight="20dp"
+                android:textColor="#a1a5ae"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t17"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="550 mm"
+                android:layout_below="@+id/t17"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t18"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind Speed"
+                android:layout_below="@+id/t7"
+                android:layout_marginRight="20dp"
+                android:textColor="#a1a5ae"
+                android:layout_toRightOf="@+id/t2"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t12"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10km/h"
+                android:layout_toRightOf="@+id/t2"
+
+                android:layout_below="@+id/t12"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t13"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NPK Values(in ppm)"
+                android:layout_below="@+id/t18"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18dp"
+                android:id="@+id/t14"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_below="@+id/t14"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="3"
+                    android:gravity="center">
+
+                    <!-- Nitrogen -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/n_value"
+                            android:fontFamily="@font/poppins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:textColor="#4CAF50"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/n_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nitrogen (N)"
+                            android:textColor="#777777"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+
+                    <!-- Phosphorus -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/p_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30"
+                            android:textColor="#FF9800"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/p_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phosphorus (P)"
+                            android:textColor="#777777"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins"
+
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+
+                    <!-- Potassium -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/k_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="40"
+                            android:fontFamily="@font/poppins"
+
+                            android:textColor="#9C27B0"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/k_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Potassium (K)"
+                            android:textColor="#777777"
+                            android:fontFamily="@font/poppins"
+
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/cv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/cv2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/arrow"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="2dp"
+
+                app:cardBackgroundColor="#fcfdff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/grass2"
+                        android:layout_centerInParent="true"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Predicted Yield"
+                android:layout_toRightOf="@+id/arrow"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20dp"
+
+                android:id="@+id/t15"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.5 tons/acre"
+                android:layout_toRightOf="@+id/arrow"
+                android:layout_below="@id/t15"
+                android:layout_marginRight="20dp"
+                android:textColor="#3d434f"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="23dp"
+                android:id="@+id/t16"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optimize Yield"
+        android:layout_below="@id/cv2"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#3d434f"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="23dp"
+        android:id="@+id/ot_t17"
+        />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="15dp"
+            android:layout_below="@id/ot_t17"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/ot_cv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Optimized Property Values"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20dp"
+                    android:id="@+id/ot_t1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:layout_below="@+id/ot_t1"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#a1a5ae"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18dp"
+                    android:id="@+id/ot_t2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="52%"
+                    android:layout_below="@+id/ot_t2"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18dp"
+                    android:id="@+id/ot_t3"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pH"
+                    android:layout_below="@+id/ot_t1"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#a1a5ae"
+                    android:layout_toRightOf="@+id/ot_t2"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18dp"
+                    android:id="@+id/ot_t4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.2"
+                    android:layout_toRightOf="@+id/ot_t2"
+                    android:layout_below="@+id/ot_t2"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18dp"
+                    android:id="@+id/ot_t5"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NPK Values(in ppm)"
+                    android:layout_below="@+id/ot_t5"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18dp"
+                    android:id="@+id/ot_t14"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/ot_t14"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:weightSum="3"
+                        android:gravity="center">
+
+                        <!-- Nitrogen -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/ot_n_value"
+                                android:fontFamily="@font/poppins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="52"
+                                android:textColor="#4CAF50"
+                                android:textSize="22sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/ot_n_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nitrogen (N)"
+                                android:textColor="#777777"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="14sp"
+                                android:layout_marginTop="4dp"/>
+                        </LinearLayout>
+
+                        <!-- Phosphorus -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/ot_p_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="39"
+                                android:textColor="#FF9800"
+                                android:textSize="22sp"
+                                android:fontFamily="@font/poppins"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/ot_p_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Phosphorus (P)"
+                                android:textColor="#777777"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/poppins"
+                                android:layout_marginTop="4dp"/>
+                        </LinearLayout>
+
+                        <!-- Potassium -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/ot_k_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="35"
+                                android:fontFamily="@font/poppins"
+                                android:textColor="#9C27B0"
+                                android:textSize="22sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/ot_k_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Potassium (K)"
+                                android:textColor="#777777"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="14sp"
+                                android:layout_marginTop="4dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/ot_cv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:cardElevation="15dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/ot_cv2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/ot_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="100dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#fcfdff">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/trending"
+                            android:layout_centerInParent="true"/>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Optimized Yield"
+                    android:layout_toRightOf="@+id/ot_arrow"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20dp"
+
+                    android:id="@+id/ot_t15"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.6 tons/acre"
+                    android:layout_toRightOf="@+id/ot_arrow"
+                    android:layout_below="@id/ot_t15"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="23dp"
+                    android:id="@+id/ot_t16"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommendations"
+            android:layout_below="@id/ot_cv2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#3d434f"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="23dp"
+            android:id="@+id/rt_t17"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/rt_t17"
+            android:id="@+id/l2"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/rt_cv2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/rt_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
+                        app:cardElevation="2dp"
+                        app:cardBackgroundColor="#aeffbc">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/nitrogenicon"
+                                android:layout_centerInParent="true"/>
+
+
+
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adjust Nitrogen Value"
+                        android:layout_toRightOf="@+id/rt_arrow"
+
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16dp"
+
+                        android:id="@+id/rt_t15"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.5 Kg/acre"
+                        android:layout_toRightOf="@+id/rt_arrow"
+                        android:layout_below="@id/rt_t15"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="23dp"
+                        android:id="@+id/rt_t16"
+                        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/rt1_cv2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/rt1_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
+                        app:cardElevation="2dp"
+                        app:cardBackgroundColor="#fffd9c">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/posphorunicon"
+                                android:layout_centerInParent="true"/>
+
+
+
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alter Phosphorus Value"
+                        android:layout_toRightOf="@+id/rt1_arrow"
+
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16dp"
+
+                        android:id="@+id/rt1_t15"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.2 Kg/acre"
+                        android:layout_toRightOf="@+id/rt1_arrow"
+                        android:layout_below="@id/rt1_t15"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="23dp"
+                        android:id="@+id/rt1_t16"
+                        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/rt2_cv2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/rt2_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
+                        app:cardElevation="2dp"
+                        app:cardBackgroundColor="#fbd5ff">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/potasicon"
+                                android:layout_centerInParent="true"/>
+
+
+
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modify Potassium Value"
+                        android:layout_toRightOf="@+id/rt2_arrow"
+
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16dp"
+
+                        android:id="@+id/rt2_t15"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.96 Kg/acre"
+                        android:layout_toRightOf="@+id/rt2_arrow"
+                        android:layout_below="@id/rt2_t15"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="23dp"
+                        android:id="@+id/rt2_t16"
+                        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:layout_marginTop="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/rt3_cv2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/rt3_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
+                        app:cardElevation="2dp"
+                        app:cardBackgroundColor="#dbeafe">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/waterph" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Soil pH Value"
+                        android:layout_toRightOf="@+id/rt3_arrow"
+
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16dp"
+
+                        android:id="@+id/rt3_t15"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.05-7.15"
+                        android:layout_toRightOf="@+id/rt3_arrow"
+                        android:layout_below="@id/rt3_t15"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="23dp"
+                        android:id="@+id/rt3_t16"
+                        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:minHeight="100dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="40dp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/rt4_cv2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:id="@+id/rt4_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
+                        app:cardElevation="2dp"
+                        app:cardBackgroundColor="#cffafe">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/moisture"
+                                android:layout_centerInParent="true"/>
+
+
+
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Improve water moisture"
+                        android:layout_toRightOf="@+id/rt4_arrow"
+
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="16dp"
+
+                        android:id="@+id/rt4_t15"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="55%-60%"
+                        android:layout_toRightOf="@+id/rt4_arrow"
+                        android:layout_below="@id/rt4_t15"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#3d434f"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="23dp"
+                        android:id="@+id/rt4_t16"
+                        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optimized Income"
+            android:layout_below="@+id/l2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/income1"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/income1"
+            android:id="@+id/l3"
+
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="15dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/income_cv1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Revenue"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20dp"
+
+                    android:id="@+id/income_text1"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.5 Kg/acre"
+                    android:layout_below="@id/income_text1"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="20dp"
+                    android:id="@+id/income_text2"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="15dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/income_cv2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Expenditure"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20dp"
+
+                    android:id="@+id/income_text3"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.6 Kg/acre"
+                    android:layout_below="@id/income_text3"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="20dp"
+                    android:id="@+id/income_text4"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="15dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/income_cv3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Profit"
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20dp"
+
+                    android:id="@+id/income_text5"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.6 Kg/acre"
+                    android:layout_below="@id/income_text5"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#3d434f"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="20dp"
+                    android:id="@+id/income_text6"
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

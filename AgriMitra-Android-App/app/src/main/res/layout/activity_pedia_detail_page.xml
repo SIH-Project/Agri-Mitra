@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+
+    tools:context=".PediaDetailPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardElevation="0dp"
+
+            android:id="@+id/cv1"
+            android:layout_marginTop="0dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fertilizers &amp; Pesticides"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="360dp"
+           android:layout_height="360dp"
+           android:id="@+id/i1"
+           android:layout_below="@id/cv1"
+           app:cardElevation="30dp"
+           android:layout_centerHorizontal="true"
+           app:cardCornerRadius="10dp"
+           android:layout_marginTop="30dp"
+           >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/urea"
+                   android:id="@+id/img1"/>
+
+
+           </RelativeLayout>
+
+
+
+
+       </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urea"
+            android:layout_below="@+id/i1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="30dp"
+            android:id="@+id/t1"
+            />
+
+        <ImageButton
+            android:id="@+id/explain"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/t1"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/volumeicon"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_below="@+id/explain"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urea is a widely used nitrogen-containing compound primarily employed as a fertilizer to enhance plant growth by supplying essential nitrogen. Though not a pesticide itself, urea plays a supportive role in integrated pest management by promoting healthy, vigorous plants that are better able to resist pest attacks. Additionally, urea can be used in formulations to boost the efficacy of some fungicides and herbicides by improving absorption. In some agricultural practices, urea sprays help reduce fungal diseases like powdery mildew by altering leaf surface conditions. Its versatility makes it an essential input in crop production."
+            android:layout_below="@+id/t2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t3"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Key Ingredients"
+            android:layout_below="@+id/t3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t4"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Carbonyl diamide (chemical formula: CO(NH₂)₂)\nContains approximately 46% nitrogen"
+            android:layout_below="@+id/t4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source"
+            android:layout_below="@+id/t5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="23dp"
+            android:id="@+id/t6"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Synthetic production via the Bosch-Meiser urea process, combining ammonia and carbon dioxide under high pressure and temperature."
+            android:layout_below="@+id/t6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="20dp"
+            android:id="@+id/t7"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

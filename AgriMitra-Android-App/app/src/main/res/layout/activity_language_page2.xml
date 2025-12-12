@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".LanguagePage2"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fcfcf8">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcfcf8"
+        android:padding="12dp"
+        android:elevation="4dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:tint="#1c1c0d"
+            android:contentDescription="Back" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_centerInParent="true"
+            android:text="Choose Your Language"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1c1c0d" />
+
+    </RelativeLayout>
+
+    <!-- Body -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:dividerHeight="8dp"
+            android:showDividers="none">
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Select your preferred language to continue."
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <!-- Language List -->
+            <RadioGroup
+                android:id="@+id/radioGroupLanguages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:dividerPadding="8dp">
+
+                <!-- English -->
+                <RadioButton
+                    android:id="@+id/langEnglish"
+                    style="@style/CustomRadioButton"
+                    android:text="English"
+                    android:fontFamily="@font/poppins"
+                    android:checked="true" />
+
+                <!-- Hindi -->
+                <RadioButton
+                    android:id="@+id/langHindi"
+                    android:fontFamily="@font/poppins"
+                    style="@style/CustomRadioButton"
+                    android:text="हिन्दी" />
+
+                <!-- Marathi -->
+                <RadioButton
+                    android:id="@+id/langMarathi"
+                    android:fontFamily="@font/poppins"
+                    style="@style/CustomRadioButton"
+                    android:text="मराठी" />
+
+                <!-- Bengali -->
+                <RadioButton
+                    android:id="@+id/langBengali"
+                    style="@style/CustomRadioButton"
+                    android:fontFamily="@font/poppins"
+                    android:text="বাংলা" />
+
+                <!-- Gujarati -->
+                <RadioButton
+                    android:id="@+id/langGujarati"
+                    style="@style/CustomRadioButton"
+                    android:fontFamily="@font/poppins"
+                    android:text="ગુજરાતી" />
+
+                <!-- Kannada -->
+                <RadioButton
+                    android:id="@+id/langKannada"
+                    style="@style/CustomRadioButton"
+                    android:fontFamily="@font/poppins"
+                    android:text="ಕನ್ನಡ" />
+
+                <!-- Tamil -->
+                <RadioButton
+                    android:id="@+id/langTamil"
+                    style="@style/CustomRadioButton"
+                    android:fontFamily="@font/poppins"
+                    android:text="தமிழ்" />
+
+                <!-- Telugu -->
+                <RadioButton
+                    android:id="@+id/langTelugu"
+                    style="@style/CustomRadioButton"
+                    android:fontFamily="@font/poppins"
+                    android:text="తెలుగు" />
+
+                <!-- Malayalam -->
+                <RadioButton
+                    android:id="@+id/langMalayalam"
+                    style="@style/CustomRadioButton"
+                    android:fontFamily="@font/poppins"
+                    android:text="മലയാളം" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer with Button -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcfcf8"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/getStarted"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="0dp"
+            app:cardElevation="20dp"
+            app:cardBackgroundColor="#70bf74"> <!-- Green -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue"
+
+                    android:textSize="20dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/poppins_bold"/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

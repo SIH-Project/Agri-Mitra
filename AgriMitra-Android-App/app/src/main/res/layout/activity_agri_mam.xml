@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".AgriMam">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textAlignment="center"
+        android:text="AgriMitra\nYour Real Friend"
+        android:fontFamily="@font/poppins_semibold"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_center"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:id="@+id/img_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mam" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom Left Mic Button inside CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_mic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+
+        app:cardCornerRadius="30dp"
+        app:cardElevation="6dp">
+
+        <ImageView
+            android:id="@+id/btn_mic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            android:background="@android:color/transparent"
+            android:src="@drawable/mic_real"
+
+
+            android:contentDescription="Mic" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom Right Go Button inside CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_go"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_margin="16dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="6dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_circle_right_24dp_737373_fill0_wght400_grad0_opsz24"
+            android:layout_margin="5dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
