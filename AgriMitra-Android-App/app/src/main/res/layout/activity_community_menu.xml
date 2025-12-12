@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F5F5F5"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityMenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="@font/poppins_bold"
+            android:text="Explore Communities"
+            android:textColor="#38893C"
+            android:textSize="24sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/t1"
+            android:id="@+id/c1"
+            app:cardElevation="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/sc1"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/maharastra"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/t0"
+
+                    android:layout_toRightOf="@+id/sc1"
+                    android:textColor="#348138"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Farmers of Maharashtra"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/t2"
+
+                    android:layout_marginTop="55dp"
+                    android:layout_toRightOf="@id/sc1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#767c89"
+                    android:text="Connect with farmers in Maharashtra" />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/c1"
+            android:id="@+id/c2"
+            app:cardElevation="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/sc2"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/tamilnadu"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/sc2"
+                    android:id="@+id/t3"
+
+                    android:textColor="#348138"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Farmers of TamilNadu"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/t4"
+
+                    android:layout_marginTop="55dp"
+                    android:layout_toRightOf="@id/sc2"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#767c89"
+                    android:text="Connect with farmers in\nTamilNadu" />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/c2"
+            android:id="@+id/c3"
+            app:cardElevation="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/sc3"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/up"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/sc3"
+                    android:id="@+id/t5"
+
+
+                    android:textColor="#348138"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Farmers of UP"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="55dp"
+                    android:id="@+id/t6"
+
+                    android:layout_toRightOf="@id/sc3"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#767c89"
+                    android:text="Connect with farmers in UP" />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/c3"
+            android:id="@+id/c4"
+            app:cardElevation="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/sc4"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/kerala"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/sc4"
+                    android:textColor="#348138"
+                    android:id="@+id/t7"
+
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Farmers of Kerala"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/t8"
+
+                    android:layout_marginTop="55dp"
+                    android:layout_toRightOf="@id/sc4"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#767c89"
+                    android:text="Connect with farmers in Kerala" />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/c4"
+            android:id="@+id/c5"
+            app:cardElevation="20dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp"
+
+                    android:id="@+id/sc5"
+                    app:cardElevation="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/karnataka"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/sc5"
+                    android:textColor="#348138"
+                    android:id="@+id/t9"
+
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Farmers of Karnataka"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_toRightOf="@id/sc5"
+                    android:id="@+id/t10"
+
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#767c89"
+                    android:text="Connect with farmers in\nKarnataka" />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

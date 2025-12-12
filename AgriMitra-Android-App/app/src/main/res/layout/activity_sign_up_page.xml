@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".SignUpPage"
+
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- Back Button -->
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/signup_title"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="8dp"
+        android:text="@string/signup_subtitle"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:fontFamily="@font/poppins"/>
+
+    <!-- Full Name Label -->
+    <TextView
+        android:id="@+id/tvNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_below="@id/tvSubtitle"
+        android:layout_marginTop="24dp"
+        android:text="@string/full_name_label"
+        android:textSize="17sp"
+        android:textColor="#555555"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <!-- Full Name Input -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_below="@id/tvNameLabel"
+        android:layout_marginTop="6dp"
+        android:hint="@string/full_name_hint"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:fontFamily="@font/poppins"/>
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/tvEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:text="Email"
+        android:textSize="17sp"
+        android:textColor="#555555"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_below="@id/tvEmailLabel"
+        android:layout_marginTop="6dp"
+        android:hint="@string/email_hint"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/poppins"/>
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/tvPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:text="@string/password_label"
+        android:textSize="17sp"
+        android:textColor="#555555"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_height="55dp"
+        android:layout_below="@id/tvPasswordLabel"
+        android:layout_marginTop="6dp"
+        android:hint="@string/password_hint"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:inputType="textPassword"
+        android:fontFamily="@font/poppins"/>
+
+    <!-- Farm Details Label -->
+    <TextView
+        android:id="@+id/tvFarmLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="16dp"
+        android:text="State"
+        android:textSize="17sp"
+        android:textColor="#555555"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <!-- Farm Details Input -->
+    <EditText
+        android:id="@+id/etFarm"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/tvFarmLabel"
+        android:layout_marginTop="6dp"
+        android:hint="Enter your State"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:fontFamily="@font/poppins"/>
+
+
+        <TextView
+            android:id="@+id/citylabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etFarm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="16dp"
+            android:text="City"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <!-- Farm Details Input -->
+        <EditText
+            android:id="@+id/cityinput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/citylabel"
+            android:layout_marginTop="6dp"
+            android:hint="Enter your City"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:fontFamily="@font/poppins"/>
+
+
+        <TextView
+            android:id="@+id/phonelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cityinput"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="16dp"
+            android:text="Phone"
+            android:textSize="17sp"
+            android:textColor="#555555"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <!-- Farm Details Input -->
+        <EditText
+            android:id="@+id/phoneinput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/phonelabel"
+            android:layout_marginTop="6dp"
+            android:hint="Enter your Phone number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:fontFamily="@font/poppins"/>
+
+
+    <!-- Sign Up Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/phoneinput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#4CAF50">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_button"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/poppins_bold"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/tvLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_below="@id/btnSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/already_account"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:fontFamily="@font/poppins"/>
+
+    <!-- Footer Progress Bar -->
+    <LinearLayout
+        android:id="@+id/footerProgress"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4CAF50" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8D6E63" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFC107" />
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

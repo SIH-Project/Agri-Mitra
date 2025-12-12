@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:background="#EEEEEE"
+    android:layout_margin="6dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/commodity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commodity"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commodity"
+        android:text="City: " />
+
+    <TextView
+        android:id="@+id/minPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city"
+        android:text="Min:" />
+
+    <TextView
+        android:id="@+id/maxPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minPrice"
+        android:text="Max:" />
+
+    <TextView
+        android:id="@+id/modelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maxPrice"
+        android:text="Model:" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modelPrice"
+        android:text="Date:" />
+
+</RelativeLayout>

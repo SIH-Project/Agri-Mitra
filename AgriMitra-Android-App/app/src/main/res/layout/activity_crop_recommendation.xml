@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CropRecommendation">
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Nitrogen -->
+            <TextView
+                android:id="@+id/nitrogenLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/nitrogenInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/nitrogenLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Phosphorus -->
+            <TextView
+                android:id="@+id/phosphorusLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nitrogenInput"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/phosphorusInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/phosphorusLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Potassium -->
+            <TextView
+                android:id="@+id/potassiumLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phosphorusInput"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/potassiumInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/potassiumLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Temperature -->
+            <TextView
+                android:id="@+id/tempLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/potassiumInput"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/tempInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/tempLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Humidity -->
+            <TextView
+                android:id="@+id/humidityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tempInput"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/humidityInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/humidityLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- pH Level -->
+            <TextView
+                android:id="@+id/phLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/humidityInput"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/phInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/phLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <!-- Rainfall -->
+            <TextView
+                android:id="@+id/rainfallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phInput"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/rainfallInput"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/rainfallLabel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="6dp"
+                android:padding="12dp"
+                android:background="@drawable/rounded_edittext" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnFetchData"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rainfallInput"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="#98ff98">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fetch Data"
+                        android:id="@+id/text1"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"
+                        android:paddingHorizontal="24dp"
+                        android:paddingVertical="12dp"
+                        android:textColor="#2f7f33"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- Submit Button -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/submitBtn"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/btnFetchData"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="6dp"
+
+                app:cardBackgroundColor="#98ff98">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"
+                        android:id="@+id/submit_tt"
+
+                        android:paddingHorizontal="24dp"
+
+                        android:paddingVertical="12dp"
+                        android:textColor="#2f7f33"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+</ScrollView>

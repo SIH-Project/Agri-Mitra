@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/crop_page"
+        android:icon="@drawable/grassicon"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/community_page"
+        android:icon="@drawable/communityicon"
+        android:title="@string/nav_simulator" />
+
+    <item
+        android:id="@+id/pest_page"
+        android:icon="@drawable/bug_svgrepo_com"
+        android:title="@string/nav_pest" />
+
+    <item
+        android:id="@+id/market_page"
+        android:icon="@drawable/marketicon"
+        android:title="@string/nav_profile" />
+
+</menu>

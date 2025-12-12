@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Dashboard Title -->
+        <TextView
+            android:id="@+id/title_dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <!-- Subtitle: My Crop Performance -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/subtitle_crop_perf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Crop Performance\nAverage yield in Tamil Nadu"
+                android:textSize="18sp"/>
+
+            <ImageButton
+                android:id="@+id/tts_crop_perf"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/volumeicon"/>
+        </LinearLayout>
+
+        <!-- BarChart: Last 5 Years Yield -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart_crop"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Subtitle: Other Crop Performance -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/subtitle_other_crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Crop Performance"
+                android:textSize="18sp"/>
+
+            <ImageButton
+                android:id="@+id/tts_other_crop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/volumeicon"/>
+        </LinearLayout>
+
+        <!-- Repeat for Rice, Sugarcane, Cotton, Potato -->
+        <TextView android:id="@+id/crop_rice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rice" android:textStyle="bold" android:layout_marginTop="10dp"/>
+        <com.github.mikephil.charting.charts.BarChart android:id="@+id/barChart_rice" android:layout_width="match_parent" android:layout_height="200dp"/>
+        <TextView android:id="@+id/crop_sugarcane" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sugarcane" android:textStyle="bold" android:layout_marginTop="10dp"/>
+        <com.github.mikephil.charting.charts.BarChart android:id="@+id/barChart_sugarcane" android:layout_width="match_parent" android:layout_height="200dp"/>
+        <TextView android:id="@+id/crop_cotton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cotton" android:textStyle="bold" android:layout_marginTop="10dp"/>
+        <com.github.mikephil.charting.charts.BarChart android:id="@+id/barChart_cotton" android:layout_width="match_parent" android:layout_height="200dp"/>
+        <TextView android:id="@+id/crop_potato" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Potato" android:textStyle="bold" android:layout_marginTop="10dp"/>
+        <com.github.mikephil.charting.charts.BarChart android:id="@+id/barChart_potato" android:layout_width="match_parent" android:layout_height="200dp"/>
+
+        <!-- Average Rainfall LineChart -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView android:id="@+id/title_rainfall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Average Rainfall (Past 5 Years)" android:textSize="18sp"/>
+            <ImageButton android:id="@+id/tts_rainfall" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:background="@android:color/transparent" android:src="@drawable/volumeicon"/>
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/lineChart_rainfall" android:layout_width="match_parent" android:layout_height="200dp"/>
+
+        <!-- Potential Pest and Disease -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView android:id="@+id/title_pest_disease" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Potential Pest and Disease Risk" android:textSize="18sp"/>
+            <ImageButton android:id="@+id/tts_pest_disease" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:background="@android:color/transparent" android:src="@drawable/volumeicon"/>
+        </LinearLayout>
+        <TextView android:id="@+id/pest_disease_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fall Armyworm, Aphids, Yellow Leaf Disease" android:layout_marginTop="10dp"/>
+
+        <!-- Net Profit LineChart -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView android:id="@+id/title_profit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Net Profit (Last 5 Years)" android:textSize="18sp"/>
+            <ImageButton android:id="@+id/tts_profit" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:background="@android:color/transparent" android:src="@drawable/volumeicon"/>
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/lineChart_profit" android:layout_width="match_parent" android:layout_height="200dp"/>
+
+        <!-- Total Expenditure PieChart -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView android:id="@+id/title_expenditure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Expenditure" android:textSize="18sp"/>
+            <ImageButton android:id="@+id/tts_expenditure" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:background="@android:color/transparent" android:src="@drawable/volumeicon"/>
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.PieChart android:id="@+id/pieChart_expenditure" android:layout_width="match_parent" android:layout_height="200dp"/>
+
+        <!-- District Avg Yield vs Your Yield -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView android:id="@+id/title_yield_compare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="District Avg Yield vs Your Yield" android:textSize="18sp"/>
+            <ImageButton android:id="@+id/tts_yield_compare" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:background="@android:color/transparent" android:src="@drawable/volumeicon"/>
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.BarChart android:id="@+id/barChart_yield_compare" android:layout_width="match_parent" android:layout_height="200dp"/>
+
+    </LinearLayout>
+</ScrollView>

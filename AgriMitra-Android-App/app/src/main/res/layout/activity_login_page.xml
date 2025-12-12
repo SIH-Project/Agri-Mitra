@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    tools:context=".LoginPage"
+    android:background="#F5F5F5"
+    >
+    <!-- Back Button -->
+
+
+    <!-- Welcome Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/welcome_back"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:fontFamily="@font/poppins"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/login_subtitle"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/tvEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSubtitle"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/email_label"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#555555" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/tvEmailLabel"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:hint="@string/email_hint"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#999999" />
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/tvPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_below="@id/etEmail"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="20dp"
+        android:text="@string/password_label"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#555555" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/tvPasswordLabel"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:hint="@string/password_hint"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:inputType="textPassword" />
+
+    <!-- Forgot Password Link -->
+    <LinearLayout
+        android:id="@+id/linksRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:text="@string/forgot_password"
+            android:textSize="14sp"
+            android:textColor="#8D6E63" />
+    </LinearLayout>
+
+    <!-- Login Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/getStarted"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/etPassword"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#70bf74"> <!-- Green -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/poppins_bold"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Create Account Link -->
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@+id/getStarted"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Footer Progress Bar Colors -->
+    <LinearLayout
+        android:id="@+id/footerProgress"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4CAF50" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#8D6E63" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFC107" />
+    </LinearLayout>
+
+</RelativeLayout>

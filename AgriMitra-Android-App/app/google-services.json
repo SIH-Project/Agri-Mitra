@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "718232171941",
+    "project_id": "sihfinal-58c7d",
+    "storage_bucket": "sihfinal-58c7d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718232171941:android:0614fcb52ba07b8ab6a44c",
+        "android_client_info": {
+          "package_name": "com.example.agrimitra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJsfD9mcFNTMRBd8bwlgj7D3PgEg1nhTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

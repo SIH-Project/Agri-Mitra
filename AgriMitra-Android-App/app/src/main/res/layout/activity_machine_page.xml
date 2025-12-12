@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F5F5F5"
+    android:fitsSystemWindows="true"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MachinePage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardElevation="0dp"
+
+            android:id="@+id/cv1"
+            android:layout_marginTop="0dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tools &amp; Machines"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_bold"/>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tool Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            app:cardElevation="20dp"
+            android:layout_marginTop="30dp"
+
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivTool1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tractor"/>
+
+                <TextView
+                    android:id="@+id/tvToolTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tractor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvToolDesc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:textSize="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Use: Towing heavy machinery, plowing, tilling, harrowing, planting, and more."
+                    android:layout_marginTop="0dp"/>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnTool1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Buy"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tool Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivTool2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p"/>
+
+                <TextView
+                    android:id="@+id/tvToolTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plough"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvToolDesc2"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:layout_height="wrap_content"
+                    android:text="Use: Turning over the upper layer of the soil, bringing fresh nutrients to the surface."
+                    android:layout_marginTop="4dp"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnTool2"
+
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Buy"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tool Card 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivTool3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/motor"/>
+
+                <TextView
+                    android:id="@+id/tvToolTitle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Water Pump"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvToolDesc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Use: Moves water from sources like wells or rivers to fields for irrigation."
+                    android:layout_marginTop="4dp"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnTool3"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Buy"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tool Card 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivTool4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/seed"/>
+
+                <TextView
+                    android:id="@+id/tvToolTitle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:text="Seed Drill"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvToolDesc4"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:layout_height="wrap_content"
+                    android:text="Use: Sows seeds at the right depth and spacing for better germination."
+                    android:layout_marginTop="4dp"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnTool4"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Buy"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tool Card 5 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivTool5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/harvester"/>
+
+                <TextView
+                    android:id="@+id/tvToolTitle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Harvester"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvToolDesc5"
+                    android:layout_width="match_parent"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_height="wrap_content"
+                    android:text="Use: Harvests crops by cutting, threshing, and separating grains in one process."
+                    android:layout_marginTop="4dp"/>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnTool5"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/spinnerDistrict"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#98ff98">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:gravity="center"
+
+                            android:paddingHorizontal="24dp"
+
+                            android:paddingVertical="12dp"
+                            android:text="Buy"
+                            android:textColor="#2f7f33"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
