@@ -1,0 +1,43 @@
+# Core Dependencies for DSIG 1: AI-Powered Potato Crop Management
+rasterio>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+tensorflow>=2.13.0
+opencv-python>=4.8.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pillow>=10.0.0
+
+# Google Earth Engine & Sentinel Hub
+earthengine-api>=0.1.350
+sentinelsat>=1.2.0
+geopandas>=0.13.0
+shapely>=2.0.0
+
+# LangChain & Agentic AI
+langchain>=0.1.0
+langchain-community>=0.0.20
+openai>=1.0.0  # or use other LLM providers
+
+# Flask API
+flask>=3.0.0
+flask-cors>=4.0.0
+flask-restful>=0.3.10
+
+# Optimization
+pulp>=2.7.0
+
+# Scheduling
+schedule>=1.2.0
+python-crontab>=3.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0
+requests>=2.31.0
+tqdm>=4.66.0
+
+# Optional: For advanced interpolation (if needed)
+# scipy>=1.11.0
+

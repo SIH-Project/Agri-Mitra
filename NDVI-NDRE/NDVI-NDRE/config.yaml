@@ -1,0 +1,83 @@
+# Configuration for AgriSmart DSIG 1 Solution
+
+# Paths
+paths:
+  input_dir: "."
+  r10_dir: "r10"
+  r20_dir: "r20"
+  output_dir: "outputs"
+  models_dir: "models"
+  data_dir: "data"
+
+# Sentinel-2 Bands
+bands:
+  10m:
+    - B02  # Blue
+    - B03  # Green
+    - B04  # Red
+    - B08  # NIR
+  20m:
+    - B05  # Red Edge 1
+    - B11  # SWIR 1
+    - B12  # SWIR 2
+
+# Vegetation Indices
+indices:
+  ndvi:
+    formula: "(NIR - Red) / (NIR + Red)"
+    bands:
+      red: "B04"
+      nir: "B08"
+    thresholds:
+      low_fertility: 0.3
+      high_fertility: 0.6
+  ndre:
+    formula: "(NIR - RedEdge) / (NIR + RedEdge)"
+    bands:
+      rededge: "B05"
+      nir: "B08"
+
+# Growth Stages
+growth_stages:
+  - "Vegetative"      # Stage 0
+  - "Tuber_Initiation" # Stage 1
+  - "Bulking"         # Stage 2
+
+# ML Models
+models:
+  cnn:
+    input_shape: [64, 64, 13]  # 13 bands
+    num_classes: 3  # Vegetative, Tuber Initiation, Bulking
+    model_path: "models/potato_growth_cnn.h5"
+    accuracy: 0.9615
+  random_forest:
+    n_estimators: 100
+    max_depth: 20
+    model_path: "models/nitrogen_rf.pkl"
+    accuracy: 0.9842
+
+# Pipeline
+pipeline:
+  schedule: "weekly"  # Every Monday at 6 AM
+  cloud_masking: true
+  scl_threshold: 3  # Valid pixel threshold
+  ndvi_change_threshold: 0.1  # Trigger threshold for MCP
+
+# Recommendations
+recommendations:
+  nitrogen:
+    low: "< 140 kg/ha"
+    medium: "140-180 kg/ha"
+    high: "> 180 kg/ha"
+  irrigation:
+    vegetative: "25-30 mm/week"
+    tuber_initiation: "35-40 mm/week"
+    bulking: "40-45 mm/week"
+    maturation: "30-35 mm/week"
+
+# API
+api:
+  host: "0.0.0.0"
+  port: 5000
+  debug: true
+
