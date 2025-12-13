@@ -224,6 +224,6 @@ IoT Sensors / Satellite Data / Weather APIs / Farmer Inputs
 
 ## Team & Acknowledgements
 
-Developed by a multidisciplinary student team, including Atharva Shukla, Sagar Awasthi, Michelle Ellen Joseph, Uday Trivedi, Eshaan Adyanthaya, and Divyanshu Karmakar as part of **Smart India Hackathon 2025**, achieving a place among the **Top 20 software teams selection** at the college level.
+Developed by a multidisciplinary student team, including Atharva Shukla, Sagar Awasthi, Michelle Ellen Joseph, Uday Trivedi, Eshaan Adyanthaya, and Divyanshu Karmakar as part of **Smart India Hackathon 2025**, achieving a place among the **Top 20 software teams selected** at the college level.
 
 ---
